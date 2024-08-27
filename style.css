@@ -1,0 +1,342 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+body{
+  background: #dfe9f5;
+}
+.container{
+  display: flex;
+}
+nav{
+  position: relative;
+  top: 15px;
+  margin-bottom: 0;
+  height: 97vh;
+  left: 10px;
+  background: #fff;
+  width: 350px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 20px 10px;
+}
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 20px;
+  font-weight: bold;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 23px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #eee;
+  width: 300px;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+/* Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flexbox;
+  width: 100%;
+}
+.main-top i{
+  position: relative;
+  right: 0;
+  margin: 0px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main-skills{
+  display: flex;
+  margin-top: 20px;
+}
+
+.main-skills .card{
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+}
+.main-skills .card p{
+  font-size: 20px;
+  text-align: justify;
+}
+.main-skills .card button{
+  background: #007bff;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-skills .card button:hover{
+  background: #5753d1;
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+.main-skills h2, h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Choose File */
+
+.file {
+  margin: 10px ;
+  background: #fff;
+  text-align: left;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+}
+
+form {
+  display: flexbox;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Dataset*/
+.dataset {
+  margin: 10px;
+  background: #fff;
+  text-align: left;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.dataset-info {
+  margin-bottom: 20px;
+}
+
+.dataset-info p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f9f9f9;
+}
+
+td {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+/*Confusion matrix*/
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.confusion-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.confusion-matrix th,
+.confusion-matrix td {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.confusion-matrix th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.confusion-matrix td {
+  background-color: #fafafa;
+}
+
+.confusion-matrix td:hover {
+  background-color: #e0e0e0;
+}
+
+/* Form Ratio*/
+.container-ratio {
+  margin: 10px ;
+  background: #fff;
+  text-align: left;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+select {
+  width: 30%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/*button {
+  text-align: center;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+} */
+
+button:hover {
+  background-color: #5753d1;
+}
+
+.split-info {
+  margin-bottom: 20px;
+}
+
+.split-info p {
+  margin: 5px 0;
+}
+
+

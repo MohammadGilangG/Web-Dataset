@@ -1,0 +1,106 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="style.css" />
+      <!-- Font Awesome Cdn Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    </head>
+    <body>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#" class="logo">
+              <img src="/image/logo.png" alt="">
+              <span class="nav-item">DashBoard</span>
+            </a></li>
+            <li><a href="home.html">
+                <i class="fas fa-home"></i>
+                <span class="nav-item">Home</span>
+            </a></li>
+            <li><a href="dataset.html">
+                <i class="fas fa-database"></i>
+                <span class="nav-item">Dataset</span>
+            </a></li>
+            <li><a href="model.html">
+                <i class="fas fa-brain"></i>
+                <span class="nav-item">Model</span>
+            </a></li>
+            <li><a href="result.html">
+                <i class="fas fa-chart-bar"></i>
+                <span class="nav-item">Result</span>
+            </a></li>
+            <li><a href="predict.html">
+                <i class="fas fa-tasks"></i>
+                <span class="nav-item">Predict</span>
+            </a></li>
+            <li><a href="" class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Log Out</span>
+            </a></li>
+          <ul>
+        </nav>
+    
+        <section class="main">
+          <div class="main-top">
+            <h1>Result</h1>
+            <i class="fas fa-user-cog"></i>
+          </div>
+          <div class="main-skills">
+            <div class="card">
+              <i class="fas fa-chart-bar"></i>
+              <h3>Result</h3>
+              <p>The test result provide a detailed evaluation of the model's performance on the test dataset. This Evaluation helps
+                measure the effect veness and reliability of the sentiment analysis system. Below is an overview of the test accuracy
+                and other important metrics </p>
+              <p>Note : Your texts column should be named "texts" and make sure the demitter is comma(,)</p>
+            </div>
+           </div>
+           
+           <div class="dataset">
+            <div class="dataset-info">
+              <h3>Test Result Overview</h3>
+              <br>
+              <h3>Con'fusion Matrix</h3>
+              <p>The Confusion matrix present a summarized view of the model's predictions compared to the actual labels. It provides 
+                insights into true positive, true negatives, false positives, and false negatives</p>
+                <br>
+                <table class="confusion-matrix">
+                    <tr>
+                      <th rowspan="2">Actual</th>
+                      <th colspan="3">Predicted</th>
+                    </tr>
+                    <tr>
+                      <th>Positive</th>
+                      <th>Neutral</th>
+                      <th>Negative</th>
+                    </tr>
+                    <tr>
+                      <th>Positive</th>
+                      <td>50</td>
+                      <td>5</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <th>Neutral</th>
+                      <td>3</td>
+                      <td>45</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <th>Negative</th>
+                      <td>2</td>
+                      <td>6</td>
+                      <td>40</td>
+                    </tr>
+                  </table>
+            </div>
+           </div>
+
+        </div>
+        </div>
+              
+              
+    </body>
+    </html></span>
